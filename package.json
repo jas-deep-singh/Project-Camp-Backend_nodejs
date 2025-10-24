@@ -1,0 +1,28 @@
+{
+  "name": "projmanagement",
+  "version": "1.0.0",
+  "description": "a simple project management application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "type": "module"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jas-deep-singh/Project-Camp-Backend_nodejs.git"
+  },
+  "keywords": [
+    "backend",
+    "API",
+    "creation"
+  ],
+  "author": "jasdeep singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jas-deep-singh/Project-Camp-Backend_nodejs/issues"
+  },
+  "homepage": "https://github.com/jas-deep-singh/Project-Camp-Backend_nodejs#readme",
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}
