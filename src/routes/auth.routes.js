@@ -5,7 +5,7 @@ import { userLoginValidator, userRegisterValidator, userForgotPasswordValidator,
 import { login } from "../controllers/auth.controllers.js";
 import { verifyJWT } from "../middlewares/auth.middleware.js";
 
-const router = Router();
+const router = Router(); 
 
 /*un-secure routes*/
 router.route("/register").post(userRegisterValidator(), validate, registerUser);

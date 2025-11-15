@@ -69,4 +69,12 @@ const userResetForgotPasswordValidator = () => {
     ]
 };
 
-export {userRegisterValidator, userLoginValidator, userChangeCurrentPasswordValidator, userForgotPasswordValidator, userResetForgotPasswordValidator};
+const createProjectValidator = () => {
+    return [
+        body("projectName")
+            .notEmpty()
+            .withMessage("Projoect name is required")
+    ]
+};
+
+export {userRegisterValidator, userLoginValidator, userChangeCurrentPasswordValidator, userForgotPasswordValidator, userResetForgotPasswordValidator, createProjectValidator};

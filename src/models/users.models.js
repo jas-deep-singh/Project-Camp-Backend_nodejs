@@ -38,6 +38,10 @@ const userSchema = new Schema(
             type: String,
             required: [true, "Password is required"],
         },
+        role: {
+            type: String,
+            default: "member"
+        },
         isEmailVerified: {
             type: Boolean,
             default: false
