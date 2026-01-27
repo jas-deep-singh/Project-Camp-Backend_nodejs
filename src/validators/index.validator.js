@@ -73,7 +73,7 @@ const createProjectValidator = () => {
     return [
         body("projectName")
             .notEmpty()
-            .withMessage("Projoect name is required")
+            .withMessage("Project name is required")
     ]
 };
 

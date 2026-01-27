@@ -10,7 +10,7 @@ const projectSchema = new Schema(
         },
         description: {
             type: String
-        },
+        }, 
         createdBy: {
             type: Schema.Types.ObjectId,
             ref: "User",

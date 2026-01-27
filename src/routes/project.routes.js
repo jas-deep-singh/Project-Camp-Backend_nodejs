@@ -8,4 +8,4 @@ const router = Router();
 
 router.route("/createProject").post(verifyJWT, createProjectValidator(), validate, createProject);
 
-export default router;
+export default router; 
