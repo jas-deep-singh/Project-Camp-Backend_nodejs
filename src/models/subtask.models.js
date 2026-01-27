@@ -1,15 +1,20 @@
 import mongoose, { Schema } from "mongoose";
 
-const projectSchema = new Schema(
+const subTaskSchema = new Schema(
     {
-        name: {
+        title: {
             type: String,
             required: true,
-            unique: true,
             trim: true
         },
-        description: {
-            type: String
+        task: {
+            type: Schema.Types.ObjectId,
+            ref: "Task",
+            required: true
+        },
+        isCompleted: {
+            type: Boolean,
+            default: false
         },
         createdBy: {
             type: Schema.Types.ObjectId,
@@ -22,4 +27,4 @@ const projectSchema = new Schema(
     }
 );
 
-export const Project = mongoose.model("Project", projectSchema);
+export const Substask = mongoose.model("Subtask", subTaskSchema);
