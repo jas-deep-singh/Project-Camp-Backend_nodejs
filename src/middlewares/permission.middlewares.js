@@ -4,7 +4,7 @@ import { ApiError } from "../utils/api-error.js";
 import { asyncHandler } from "../utils/async-handler.js"
 
 export const validateProjectPermission = (roles = []) => {
-    asyncHandler(async(req, _, next) => {
+    return asyncHandler(async(req, _, next) => {
         const {projectId} = req.params;
         if(!projectId) {
             throw new ApiError(400, "Project id is missing");
