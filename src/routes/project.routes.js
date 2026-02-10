@@ -9,7 +9,7 @@ import { AvailableUSerRoles, UserRolesEnum } from "../utils/constants.js";
 const router = Router();
 router.use(verifyJWT);
 
-router
+router 
     .route("/")
     .get(getUserProjects)
     .post(createProjectValidator(), validate, createProject)

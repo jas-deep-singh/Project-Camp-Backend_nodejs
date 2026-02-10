@@ -15,7 +15,7 @@ const subTaskSchema = new Schema(
         isCompleted: {
             type: Boolean,
             default: false
-        },
+        }, 
         createdBy: {
             type: Schema.Types.ObjectId,
             ref: "User",
@@ -27,4 +27,4 @@ const subTaskSchema = new Schema(
     }
 );
 
-export const Substask = mongoose.model("Subtask", subTaskSchema);
+export const Subtask = mongoose.model("Subtask", subTaskSchema);
