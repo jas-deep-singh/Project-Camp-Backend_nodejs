@@ -28,4 +28,7 @@ app.use("/api/v1/projects", projectRouter);
 import taskRouter from "./routes/task.routes.js";
 app.use("/api/v1/tasks", taskRouter);
 
+import noteRouter from "./routes/note.routes.js";
+app.use("/api/v1/notes", noteRouter);
+
 export default app;
